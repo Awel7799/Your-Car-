@@ -1,0 +1,67 @@
+/* Caruosel.css */
+.car-container{
+    border: 1px solid black;
+    width: 99%;
+    height: 838px;
+    margin: 10px;
+    
+}
+.car-body-container{
+        border: 1px solid black;
+        width: 1200px;
+        height: 740px;
+        margin: 40px;
+}
+.car-tittle{
+    border: 1px solid black;
+    width: 343px;
+    height: 165px;
+    margin: 20px 0px 0px 450px ;
+}
+.container{
+    display: flex;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+}
+.car-card {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.car-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Ensures image maintains aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.car-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.car-card p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: bold;
+}
+.car-item{
+    height: 200px;
+    width: 200px ;
+    border: 1px solid black;
+}
