@@ -14,37 +14,12 @@ const NAV_LINKS = [
 
 function Header() {
   return (
-    <header className="header-container">
-      <nav className="navbar" aria-label="Main navigation">
-        <div className="navbar-logo">
-          <a href="/" title="YourCar Home">YourCar</a>
-        </div>
-        <ul className="navbar-menu">
-          {NAV_LINKS.map(({ label, href, id }) => (
-            <li key={id} className="navbar-item">
-              <a href={href} aria-label={label}>{label}</a>
-            </li>
-          ))}
-        </ul>
+    <header className='header-container'>
+      <nav className='nav-bar'>
+        <div className='logo'>yourCar</div>
+        <div className='cart'>cart</div>
+        <div className='menu-bar'>---</div> 
       </nav>
-
-      <div className="header-text">
-        <div className="text-tittle">
-          <span>Find the perfect car for you at YourCar.</span>
-        </div>
-        <div className="discription-text">
-          <span>
-            We offer a wide range of cars that cater to your needs and budget. 
-            Visit us today and drive away with your dream car
-          </span>
-        </div>
-        <button 
-          className="discover-button"
-          aria-label="Discover our car collection"
-        >
-          Discover <ArrowUpRight size={15} aria-hidden="true" />
-        </button>
-      </div>
     </header>
   );
 }
