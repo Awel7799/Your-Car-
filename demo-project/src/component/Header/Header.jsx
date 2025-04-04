@@ -16,7 +16,7 @@ function Header() {
   return (
     <header className='header-container'>
       <nav className='nav-bar'>
-        <div className='logo'>yourCar</div>
+        <div className='logo'>YourCar</div>
         <div className='cart'>cart</div>
         <div className='menu-bar'>---</div> 
       </nav>
