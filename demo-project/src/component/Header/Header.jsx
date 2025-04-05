@@ -1,26 +1,34 @@
 // import statements remain unchanged
 import React from 'react';
-import { ArrowUpRight } from "lucide-react";
+import cart from '../../assets/Group.svg';
+import menu from '../../assets/Vector (1).svg';
 import './Header.css';
-
-const NAV_LINKS = [
-  { label: 'Home', href: '/', id: 'nav-home' },
-  { label: 'About', href: '/about', id: 'nav-about' },
-  { label: 'Service', href: '/service', id: 'nav-service' },
-  { label: 'Cars', href: '/cars', id: 'nav-cars' },
-  { label: 'Contact', href: '/contact', id: 'nav-contact' },
-  { label: 'Cart', href: '/cart', id: 'nav-cart' },
-];
 
 function Header() {
   return (
-    <header className='header-container'>
-      <nav className='nav-bar'>
-        <div className='logo'>YourCar</div>
-        <div className='cart'>cart</div>
-        <div className='menu-bar'>---</div> 
-      </nav>
-    </header>
+    <nav className='navbar'>
+      <div className='navbar-container'>
+        <div className='logo'>
+          <p>YourCar</p>
+        </div>
+
+        <div className='nav-links'>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Service</a>
+          <a href="#">Cars</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <div className='cart-icon'>
+          <img src={cart} alt="shopping cart" />
+        </div>
+
+        <div className='menu-icon'>
+          <img src={menu} alt="menu" />
+        </div>
+      </div>
+    </nav>
   );
 }
 
