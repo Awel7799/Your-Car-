@@ -1,8 +1,10 @@
 // import statements remain unchanged
-import React, { useState } from 'react';
+import React, { useState , useContext } from 'react';
 import cart from '../../assets/Group.svg';
 import menu from '../../assets/Vector (1).svg';
 import './Header.css';
+import cartContext from  '../cartContext/cartContext.jsx'
+
 
 function Header() {
   const [isOpen,setIsOpen]=useState(false)
@@ -10,6 +12,7 @@ function Header() {
   const handleMenu = ()=>{
     setIsOpen(!isOpen); 
   }
+
   return (
     <nav className='navbar'>
       <div className='navbar-container'>
@@ -31,7 +34,7 @@ function Header() {
        }
         <div className='cart-icon'>
           <img src={cart} alt="shopping cart" />
-          <p className='item-amount'>90</p>
+          <p className='item-amount'>{cart.length}</p>
         </div>
         <div className='menu-icon'>
           <button className='menu-btn' onClick={handleMenu} >
