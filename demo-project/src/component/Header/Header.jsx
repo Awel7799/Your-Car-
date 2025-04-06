@@ -8,20 +8,22 @@ function Header() {
   return (
     <nav className='navbar'>
       <div className='navbar-container'>
-        <div className='logo'>
-          <p>YourCar</p>
+        <div>
+          <p className='logo'>Your<span className='car-span'>Car</span></p>
         </div>
 
-        <div className='nav-links'>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Service</a>
-          <a href="#">Cars</a>
-          <a href="#">Contact Us</a>
+        <div className='link-container'>
+          <ul className='nav-links'>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Cars</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
         </div>
-
         <div className='cart-icon'>
           <img src={cart} alt="shopping cart" />
+          <p className='item-amount'>90</p>
         </div>
 
         <div className='menu-icon'>
