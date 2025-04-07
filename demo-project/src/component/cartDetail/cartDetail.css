@@ -1,7 +1,17 @@
 .cartDetailContrainer{
     border: 1px solid black;
-    height: 300px;
-    width: 200px;
+    background-color: aquamarine;
+    overflow-x: hidden;
+    width: 375px;
+    height: 699px;
     margin-top: -750px;
-    margin-left: 100px;
+}
+.item-section{
+    border: 2px solid black;
+    overflow-x: hidden;
+    width: 50%;
+    margin: 10%;
+}
+.delete-btn{
+    background-color: brown;
 }

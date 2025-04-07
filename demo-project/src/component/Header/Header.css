@@ -3,6 +3,7 @@
 }
 .navbar{
   box-sizing: border-box;
+  overflow-x: hidden;
   width: 100%;
 }
 .navbar-container{
@@ -37,8 +38,7 @@
   height: 705px;
   position: absolute;
   top: 82px;
-  right: 0%;
-  transition: transform 0.9s ease;
+  right: 1%;
 }
 ul{
   margin-top: 171px;

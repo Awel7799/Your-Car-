@@ -4,7 +4,7 @@ import menu from '../../assets/Vector (1).svg';
 import './Header.css';
 import cartContext from '../cartContext/cartContext.jsx';
 
-function Header() {
+function Header({ onCartClick }) {
   const [isOpen, setIsOpen] = useState(false);
 
   // ✅ Use context value here
@@ -33,7 +33,7 @@ function Header() {
             </div>
           )
         }
-        <div className='cart-icon'>
+        <div className='cart-icon' onClick={onCartClick}>
           <img src={cart} alt="shopping cart" />
           <p className='item-amount'>{carts?.length || 0}</p>
         </div>
