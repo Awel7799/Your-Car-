@@ -5,7 +5,7 @@ import './Header.css';
 import cartContext from '../cartContext/cartContext.jsx';
 
 function Header({ onCartClick }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   // ✅ Use context value here
   const { cart: carts } = useContext(cartContext);
