@@ -1,15 +1,11 @@
 .cartDetailContrainer{
-    border: 1px solid black;
     background-color:rgb(18, 39, 61,0.95);
-    ;
-
     overflow-x: hidden;
     width: 100%;
     height: 699px;
     margin-top: -750px;
 }
 .item-section{
-   border: 1px solid black;
    height: auto;
    width: 100%;
 }
@@ -23,9 +19,9 @@
     border: none;
 }
 .individual-item{
-    border: 1px solid black;
     margin-top: 10px;
-    border: 2px solid black;
+    background-color:#FFFFFF ;
+    box-shadow: 4px 10px 30px 0px #0000001A;
     overflow-x: hidden;
     display: flex;
     width: 90%;
@@ -34,25 +30,78 @@
     left: 22px;
 }
 .item-discription{
-    border: 1px solid black;
     height: 100px;
     width: 45%;
     margin: 2%;
 }
 .item-text{
-    border: 1px solid black;
-    height: 40px;
-    width: 70%;
-    margin: 6px;
+    width: 150px;
+    height: 14px;
+    margin-left: 4px;
+    font-family: Nunito Sans;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#232222F5;
+    ;
 }
 .item-img{
-    border: 1px solid black;
     height: 100px;
     width: 45%;
     margin: 2%; 
 }
 .inc-dec-btn{
     display: flex;
-    padding: 4px;
+    width: 140px;
+    height: 31.141822814941406px;
+    margin: 10px;  
+}
+.dec-btn{
+    background-color: #741906;
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    border: none;
+}
+.counter{
+    width: 10.630434036254883px;
+    height: 22.442026138305664px;
     margin: 5px;
+    font-family: Nunito Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #12273D;       
+}
+.inc-btn{
+    background-color: #741906;
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    border: none;
+}
+.delete-icon{
+    border: none;
+    margin-top: -3px;
+    margin-left: 4px;
+    height:10px;
+    width: 10px;
+    font-size: 25px;
+}
+.item-name{
+    color:#741906;
+    font-family: Nunito Sans;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 161px;
+    height: 29.16666603088379px;
+    top: 179.83px;
+    left: 37.17px;
+        
 }

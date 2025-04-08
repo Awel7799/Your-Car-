@@ -3,6 +3,7 @@ import cartContext from '../cartContext/cartContext';
 import { useContext, useState } from 'react';
 
 
+
 function cartDetail({ isCartOpen }){
 
     const {cart: carts,clearCart,removeFromCart}=useContext(cartContext);
@@ -26,16 +27,16 @@ if(!isCartOpen) return null;
        <div className='individual-item'>
             <div className='item-discription'>
               <p className='item-name'>{item.name}</p>
-              <p className='item-text'>{item.discriptio}</p>
+              <p className='item-text'>{item.discription}</p>
               <div className='inc-dec-btn'>
                     <button className='dec-btn' onClick={decrease}>-</button>
-                    <p>{count}</p>
+                    <p className='counter'>{count}</p>
                     <button className='inc-btn' onClick={increase}>+</button>
-                    <button  onClick={()=>removeFromCart(item.id)}>🗑️</button>
+                    <button className='delete-icon'  onClick={()=>removeFromCart(item.id)}>🗑️</button>
               </div>
             </div>
-            <div className='item-img'>
-
+            <div key={item.id} className='item-img'>
+              <img src={item.Image} alt="photo of car" />
             </div>
        </div>
         )))}
