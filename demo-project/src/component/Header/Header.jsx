@@ -15,6 +15,7 @@ function Header({ onCartClick }) {
   };
 
   return (
+    <header className='general-container'>
     <nav className='navbar'>
       <div className='navbar-container'>
         <div>
@@ -44,6 +45,7 @@ function Header({ onCartClick }) {
         </div>
       </div>
     </nav>
+    </header>
   );
 }
 

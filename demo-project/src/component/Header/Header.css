@@ -1,10 +1,17 @@
 *{
   margin: 0%;
 }
+.general-container{
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
+}
 .navbar{
   box-sizing: border-box;
   overflow-x: hidden;
   width: 100%;
+  background-color:#FAFAFA;
+  ;
 }
 .navbar-container{
   flex-wrap: wrap;
@@ -32,13 +39,14 @@
   color: #12273D;
 }
 .link-container{
-  background-color:rgba(18, 39, 61, 0.95);
+  background-color:rgba(18, 39, 61, 0.7);
   backdrop-filter: blur(8px);
   width: 203px;
   height: 705px;
   position: absolute;
   top: 82px;
   right: 1%;
+  z-index: 11;
 }
 ul{
   margin-top: 171px;
