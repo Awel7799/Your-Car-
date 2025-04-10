@@ -5,7 +5,7 @@ import './Header.css';
 import cartContext from '../cartContext/cartContext.jsx';
 
 function Header({ onCartClick }) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   // ✅ Use context value here
   const { cart: carts } = useContext(cartContext);
@@ -21,19 +21,17 @@ function Header({ onCartClick }) {
         <div>
           <p className='logo'>Your<span className='car-span'>Car</span></p>
         </div>
-        {
-          isOpen && (
-            <div className='link-container'>
-              <ul className='nav-links'>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Cars</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-          )
-        }
+
+         <div className={`link-container ${isOpen ? 'open' : ''}`}>
+            <ul className='nav-links'>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Cars</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
         <div className='cart-icon' onClick={onCartClick}>
           <img src={cart} alt="shopping cart" />
           <p className='item-amount'>{carts?.length || 0}</p>
