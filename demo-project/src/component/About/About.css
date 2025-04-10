@@ -1,0 +1,60 @@
+.about-page-container{
+    border: 1px solid black;
+    box-sizing:border-box;
+    width: 100%;
+    height: 598px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.page-text{
+    border: 1px solid black;
+    width: 100%;
+    height: 598px;
+    position: relative;
+    top:0;
+    left:0;
+}
+.tittle{
+    border: 1px solid black;
+    width: 100%;
+    height: 85px;
+    position: relative;
+    top: 0;
+    left: 0;
+    
+}
+.small-tittle{
+    width: 91px;
+    height: 41px;
+    position: relative;
+    top: 25px;
+    left: 28%;
+    font-family: Lora;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:rgba(116, 25, 6, 1);
+    z-index: 2;
+}
+.bigg-tittle{
+    border: 1px solid black;
+    width: 100%;
+    height: 85px;
+    position: relative;
+    top: -40px;
+    left: 0%;
+    font-family: Lora;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:rgba(235, 235, 235, 1);
+    z-index: 1;
+}
+.p-bigg-tittle{
+    position: relative;
+    left:0%;
+    width:85%;  
+}

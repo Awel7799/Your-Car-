@@ -1,4 +1,5 @@
 import Header from "./component/Header/Header"
+import About from "./component/About/About"
 import CartProvider from "./component/cartContext/CartProvider"
 import CartDetail from "./component/cartDetail/cartDetial"
 import Main from "./component/Header/main"
@@ -13,6 +14,7 @@ function App() {
         <Header onCartClick={() => setIsCartOpen((prev) => !prev)}  />
         <CartDetail isCartOpen={isCartOpen} />
         <Main />
+        <About />
 
     </CartProvider>
     </>
