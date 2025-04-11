@@ -1,5 +1,6 @@
 *{
   margin: 0%;
+  box-sizing: border-box;
 }
 .general-container{
   box-sizing: border-box;
@@ -11,7 +12,6 @@
   overflow-x: hidden;
   width: 100%;
   background-color:#FAFAFA;
-  ;
 }
 .navbar-container{
   flex-wrap: wrap;
@@ -110,16 +110,16 @@ ul{
   position: absolute;
   top: -7px;
   left: 23px;
-  width: 30%;
-  height: 15px;
-  padding: 3px;
+  width: 34%;
+  height: 22px;
+  padding: 1px;
 
 }
 @media(min-width:900px){
 .cart-icon{
     position: relative;
     top: -125px;
-    left:3%;
+    left:1%;
     margin-left: auto;
     margin-right: 40px;
     z-index: 10;

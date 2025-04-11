@@ -15,7 +15,6 @@ function App() {
         <CartDetail isCartOpen={isCartOpen} />
         <Main />
         <About />
-
     </CartProvider>
     </>
   )

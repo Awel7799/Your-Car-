@@ -9,7 +9,6 @@ function Header({ onCartClick }) {
 
   // ✅ Use context value here
   const { cart: carts } = useContext(cartContext);
-
   const handleMenu = () => {
     setIsOpen(!isOpen);
   };
