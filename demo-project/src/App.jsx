@@ -1,5 +1,6 @@
 import Header from "./component/Header/Header"
 import About from "./component/About/About"
+import Service from "./component/service/service"
 import CartProvider from "./component/cartContext/CartProvider"
 import CartDetail from "./component/cartDetail/cartDetial"
 import Main from "./component/Header/main"
@@ -15,6 +16,7 @@ function App() {
         <CartDetail isCartOpen={isCartOpen} />
         <Main />
         <About />
+        <Service />
     </CartProvider>
     </>
   )

@@ -1,0 +1,90 @@
+.service-page-container{
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+.service-tittle{
+    border: 1px solid black;
+    height: 200px;
+    width: 98%;
+    margin: 10px;
+}
+.service-cards{
+    border: 1px solid black;
+    height: 1000px;
+    width: 98%;
+    margin: 10px;
+}
+.car-selling-card{
+    border: 1px solid black;
+    height: 300px;
+    width: 95%;
+    margin: 10px;
+}
+.car-rental-card{
+    border: 1px solid black;
+    height: 300px;
+    width: 95%;
+    margin: 10px;
+}
+.car-seles-card{
+    border: 1px solid black;
+    height: 300px;
+    width: 95%;
+    margin: 10px;
+}
+.big-S-tittle{
+    margin: 10px;
+    font-size: 70px;
+    margin-left: 50%;
+}
+.small-s-tittle{
+    margin: 10px;
+    font-size: 70px;
+    margin-left: 50%;
+}
+.diamond-icon{
+    border: 1px solid black;
+    width: 90%;
+    height: 100px;
+    margin: 10px;
+}
+.diamond-discription{
+    border: 1px solid black;
+    width: 90%;
+    height: 150px;
+    margin: 10px;
+}
+.hands-icon{
+    border: 1px solid black;
+    width: 90%;
+    height: 100px;
+    margin: 10px;
+}
+.hands-icon-discription{
+    border: 1px solid black;
+    width: 90%;
+    height: 150px;
+    margin: 10px;
+}
+.star-icon{
+    border: 1px solid black;
+    width: 90%;
+    height: 100px;
+    margin: 10px;
+}
+.star-icon-discription{
+    border: 1px solid black;
+    width: 90%;
+    height: 150px;
+    margin: 10px;
+}
+@media(min-width:900px){
+    .service-cards{
+        display: flex;
+        height: auto;
+    }
+}
