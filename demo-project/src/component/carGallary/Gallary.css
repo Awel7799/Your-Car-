@@ -1,3 +1,40 @@
-h1{
-    background-color: rgb(151, 198, 238);
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.Gallary-container{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    margin-top: -200px;
+}
+img{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 50%;
+}
+.first-Gallary{
+    margin: 0%;
+    padding: 0%;
+}
+.second-Gallary{
+    margin: 0%;
+    padding: 0%;
+} 
+.third-Gallary{
+    margin: 0%;
+    padding: 0%;
+}
+@media(max-width:900px){
+    .Gallary-container{
+        display: block;
+    }   
+    .second-Gallary{
+        display: none;
+    } 
+    .third-Gallary{
+        display: none;
+    }
 }
