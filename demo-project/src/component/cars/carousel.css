@@ -1,0 +1,67 @@
+.general-car-container{
+    border: 1px solid black;
+    width:95%;
+    height: 1000px;
+    margin: 5px;
+}
+.car-tittle{
+    border: 1px solid rgb(0, 0, 0);
+    width: 98%;
+    height:200px;
+    margin: 4px;
+}
+.big-car-tittle{
+    width: 185px;
+    height: 85px;
+    margin: 45px 20% 0% 20%;    
+}
+.p-big-car-tittle{
+    font-family: Lora;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(235, 235, 235, 1);    
+}
+.small-car-tittle{
+    width: 70px;
+    height: 41px;
+    margin: -45px 20% 0% 32%;
+}
+.p-small-car-tittle{
+    font-family: Lora;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(116, 25, 6, 1);    
+}
+.card-list{
+    border: 1px solid rgb(159, 18, 18);
+    width: 98%;
+    height: 468px;    
+    margin: 4px;
+}
+.cards-car{
+    border: 1px solid black;
+    margin-left: 10%;
+    width: 267.9384765625px;
+    height: 155.07691955566406px;  
+}
+.car-img{
+    margin-left: 20%;
+    margin-top: 20px;
+    padding: 10px;
+}
+.cards-discription{
+    border: 1px solid black;
+    width: 98%;
+    height: 400px;
+    margin: 4px;
+}
+.cards-button{
+    border: 1px solid black;
+    width: 98%;
+    height: 100px;
+    margin: 4px;
+}
