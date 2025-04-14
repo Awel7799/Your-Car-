@@ -3,6 +3,7 @@ import About from "./component/About/About"
 import Service from "./component/service/service"
 import Carousel from "./component/cars/carousel"
 import Gallary from "./component/carGallary/Gallary"
+import Testimonial from "./component/testimonial/Testimonial"
 import CartProvider from "./component/cartContext/CartProvider"
 import CartDetail from "./component/cartDetail/cartDetial"
 import Main from "./component/Header/main"
@@ -23,6 +24,7 @@ function App() {
         <Service />
         <Carousel />
         <Gallary />
+        <Testimonial />
     </CartProvider>
     </Productprovider>
     </>
