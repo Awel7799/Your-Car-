@@ -27,7 +27,7 @@ function Header({ onCartClick }) {
               <li><a href="#">About</a></li>
               <li><a href="#">Service</a></li>
               <li><a href="#">Cars</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a className='contact-link' href="#">Contact Us</a></li>
             </ul>
           </div>
 
