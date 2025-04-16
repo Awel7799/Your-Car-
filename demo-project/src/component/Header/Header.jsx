@@ -23,16 +23,16 @@ function Header({ onCartClick }) {
 
          <div className={`link-container ${isOpen ? 'open' : ''}`}>
             <ul className='nav-links'>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Cars</a></li>
-              <li><a className='contact-link' href="#">Contact Us</a></li>
+              <li><a className='contact-link' href="#">Home</a></li>
+              <li><a className='contact-link' href="#">About</a></li>
+              <li><a className='contact-link' href="#">Service</a></li>
+              <li><a className='contact-link' href="#">Cars</a></li>
+              <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
 
         <div className='cart-icon' onClick={onCartClick}>
-          <img src={cart} alt="shopping cart" />
+          <img className='cart-img' src={cart} alt="shopping cart" />
           <p className='item-amount'>{carts?.length || 0}</p>
         </div>
         <div className='menu-icon'>

@@ -47,9 +47,9 @@
     background:transparent;
     width: 195px;
     height: 55px;
-    position: relative;
-    top: 300px;
-    left: 5px;
+    position: absolute;
+    top: 700px;
+    left: 30%;
     gap: 4px;
 }
 .hero-section-detail {
@@ -59,6 +59,14 @@
     height: 100%;
     padding-right: 1rem;  /* Optional: space from the right edge */
     position: relative;
+}
+.arrow-img{
+    height: 50px;
+    width: 50px;
+}
+.discover-word{
+    position: relative;
+    top: -12px;
 }
 @media(min-width:900px){
 .cont{
