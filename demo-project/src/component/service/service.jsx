@@ -10,7 +10,7 @@ function Service(){
                     <p className='p-big-S-tittle'>Services</p>
                 </div>
                 <div className='small-s-tittle'>
-                    <p className='p-small-s-tittle'>Service</p>
+                    <p className='p-small-s-tittle'>Services</p>
                 </div>
          </div>
          <div className='service-cards'>

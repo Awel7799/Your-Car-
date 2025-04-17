@@ -48,11 +48,12 @@
 }
 .cards-car{
     margin-left: 20%;
-    width: 60%;
-    height: 125.07691955566406px;  
+    width: 200px;
+    height: 205.07691955566406px;  
 }
 .car-img{
-    margin-left: 9%;
+    border: 1px solid black;
+    margin-left: 9px;
     margin-top: 20px;
     padding: 10px;
 }
