@@ -9,7 +9,6 @@
     background-repeat: no-repeat;
 }
 .hero-tittle{
-    border: 1px solid black;
     width: 341px;
     height: 92px;
     position: relative;
@@ -49,13 +48,12 @@
     background:transparent;
     width: 195px;
     height: 55px;
-    position: absolute;
-    top: 700px;
-    left: 30%;
+    position: relative;
+    top: 600px;
+    left: -10%;
     gap: 4px;
 }
 .hero-section-detail {
-    border: 1px id black;
     display: flex;
     flex-direction: column;
     align-items: flex-end; /* Align children to the right */
@@ -79,19 +77,39 @@
     margin-left: 70%;
     display: flex;
     justify-content: end;
+    width: 605px;
+    height: 164px;
+    font-family: Lora;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: rgba(255, 255, 255, 1);        
 }
 .hero-section-discription{
     background-color: transparent;
+    margin-top: 10px;
     position: relative;
     top: 130px;
     left: 9px;
+    width: 395px;
+    height: 221px;
+    font-family: Lora;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color:rgba(255, 255, 255, 1) ;            
 }
 .discover-button{
     position: relative;
-    top: 210px;
+    top: 100px;
     left: 5px;
     gap: 4px;
-    
+    width: 195px;
+    height: 55px;
 }
 .hero-section-detail{
     display: flex;
