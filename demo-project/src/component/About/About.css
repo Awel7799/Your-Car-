@@ -17,41 +17,42 @@
 .tittle{
     width: 100%;
     height: 85px;
-    padding-left: 10px;
+    padding-left: 10%;
     padding-bottom: 105px;
 }
 .small-tittle{
     width: 91px;
     height: 41px;
+    margin-left: 70px;
     font-family: Lora;
     font-weight: 700;
     font-size: 38px;
     line-height: 100%;
     letter-spacing: 0%;
     color:rgba(116, 25, 6, 1);
-    z-index: 10;
 }
 .small-tittle-p{
-    padding-top: 49%;
-    padding-left: 155%;
+    margin-left: 10px;
+    padding-top: 53%;
     padding-bottom: 10px;
-    z-index: 4;
+    z-index: 4099;
 }
 .bigg-tittle{
     width: 100%;
     height: 85px;
     position: relative;
     top: -40px;
-    left: 0%;
+    left: 2%;
     z-index: 1;
+    display: flex;
 }
 .p-bigg-tittle{
     position: relative;
-    margin-left: 10%;
-    width:85%;  
+    margin-left: -3%;
+    width:100%;  
     font-family: Lora;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 64px;
     line-height: 100%;
     letter-spacing: 0%;
     color:rgba(235, 235, 235, 1);
@@ -73,9 +74,11 @@
     align-items: center;
 }
 .About-page-car-img{
-    position: absolute;
-    margin-left: 50%;
     display: none;
+    align-items: flex-end;
+    position: absolute;
+    right: 0%;
+    left: 50%;
 }
 .background-img{
     margin-left: 12px
@@ -85,17 +88,31 @@
 }
 @media(min-width:900px){
     .page-text{
-        width: 40%;
+        width: 56%;
     }    
     .discription{
         width: 90%;
+        position: relative;
+        top: 50px;
+        left: 60px;
     }
     .About-page-car-img{
         overflow-y: hidden;
         overflow-x: hidden;
         display: flex;
-        width: 40%;
-        height:auto;
+        width: 35%;
+        position: absolute;
+        right: 0%;
+        left: 60%;
+        top: 106%;
     }
-    
+    .small-tittle{
+        position: relative;
+        left: -12%;
+        top: 32px;
+        font-size: 56px;
+    }
+    .p-bigg-tittle{
+        font-size:92px;
+    }
 }

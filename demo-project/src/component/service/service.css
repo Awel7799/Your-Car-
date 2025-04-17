@@ -18,31 +18,34 @@
 }
 .service-cards{
     height: 1100px;
-    width: 98%;
+    width: 100%;
     margin: 10px;
 }
 .car-selling-card{
+    border: 1px solid black;
     height: 345px;
     width: 95%;
     margin: 10px;
 }
 .car-rental-card{
+    border: 1px solid black;
     height: 345px;
     width: 95%;
     margin: 10px;
 }
 .car-seles-card{
+    border: 1px solid black;
     height: 345px;
     width: 95%;
     margin: 10px;
 }
-.big-S-tittle{
+.big-S-tittle{border: 1px solid black;
     width: 137px;
     height: 89px;
     padding-top: 35px;
-    margin-left: 30%;
+    margin-left: 20%;
 }
-.p-big-S-tittle{
+.p-big-S-tittle{border: 1px solid black;
     font-family: Lora;
     font-weight: 700;
     font-size: 64px;
@@ -50,7 +53,7 @@
     letter-spacing: 0%;   
     color: rgba(235, 235, 235, 1);  
 }
-.small-s-tittle{
+.small-s-tittle{border: 1px solid black;
     width: 130px;
     height: 33px;
     padding-top: 0px;
@@ -65,9 +68,9 @@
     color:rgba(18, 39, 61, 1);   
 }
 .diamond-icon{
-    width: 90%;
-    height: 110px;
-    margin: 5px;
+    width: 210px;
+    height: 150px;
+    margin: -30px 0px -30px 20px ;
     padding: 10px 0px 2px 30%;
 }
 .diamond-discription{
@@ -78,6 +81,7 @@
 }
 .diamond-tittle{
     font-family: Nunito Sans;
+    margin-left: 19px;
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
@@ -96,9 +100,8 @@
         
 }
 .hands-icon{
-    width: 90%;
-    height: 120px;
-    margin: 5px;
+    width: 250px;
+    height: 300px;
     padding: 10px 0px 2px 30%;
 }
 .hands-icon-discription{
