@@ -106,7 +106,7 @@
   height: 24px;
   margin-left: 100px;
   position: absolute;
-  top: 20px;
+  top: 23px;
   right: 5px;
   z-index: 20;
 }
@@ -146,26 +146,28 @@
   position: relative;
   width: 90%;
   height: 69px;
-  top: -199px;
-  left: 10%;
+  top: -140px;
+  left: 5%;
   display: flex;
   z-index: 1;
 }
 .nav-links{
+
   display: flex;
   position: relative;
-  top: 0;
-  left: 40%;
+  top: -110px;
+  left: 30%;
 }
 .nav-links li{
-  margin: 5px;
-  width: 79px;
-  height: -0;
+  margin: 17px 7px 7px 17px;
+  width: 110px;
+  height: 45px;
   border-radius: 6px;
   
 }
 .nav-links li a{
-  width: 100%;
+  margin: 0% 10px 0px -10px;
+  padding: 3px 0% 0% 0%;
   height: 42px;
   display: flex;
 }
