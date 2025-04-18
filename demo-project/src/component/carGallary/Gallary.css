@@ -27,14 +27,92 @@ img{
     margin: 0%;
     padding: 0%;
 }
+.tesla-model{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/Rectangle 2.png');
+}
+.tesla-tittle{
+    width: 202px;
+    height: 44px;
+    position: relative;
+    left: 25%;
+    top: 48px;
+    font-family: Nunito Sans;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:rgba(255, 255, 255, 1) ;      
+}
+.tesla-discription{
+    width: 342px;
+    height: 54px;
+    position: relative;
+    top: 50px;
+    left: 10%;
+    font-family: Nunito Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color:rgba(255, 255, 255, 1) ;      
+}
+.tesla-contact-btn{
+    width: 142;
+    height: 45;
+    border: 2px solid rgba(255, 255, 255, 1);
+    gap: 10px;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-right: 28px;
+    padding-bottom: 8px;
+    padding-left: 28px;
+    font-family: SF Pro Display;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    top: 70px;
+    left: 34%;
+}
 @media(max-width:900px){
     .Gallary-container{
         display: block;
     }   
-    .second-Gallary{
+    .first-Gallary{
         display: none;
     } 
     .third-Gallary{
         display: none;
+    }   
+}
+@media(min-width:900px){
+    .tesla-model{
+        width: 100%;
+        height:50%;
+        background-position:center;
+        background-repeat:repeat;
+        background-image: url('../../assets/Rectangle 2.png');
+    }
+    .tesla-tittle{
+       position: relative;
+       top: 160px;      
+    }
+    .tesla-discription{
+        position: relative;
+        top: 170px;    
+        left: -8px;
+    }
+    .tesla-contact-btn{
+        position: relative;
+        top: 200px;
     }
 }
