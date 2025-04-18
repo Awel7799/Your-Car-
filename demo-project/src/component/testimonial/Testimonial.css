@@ -99,13 +99,30 @@
     top: -119px;
     margin-left: 69%;
 }
+@media(min-width:700px){
+    .tstm-tittle{
+        width: 50%;
+        position: relative;
+        top: -10px;
+        left: 20%;
+    }
+    .tstm-discription{
+        border: 1px solid black;
+        position: relative;
+        top: 10px;
+        left: 17%;
+    }
+}
 @media(min-width:900px){
     .testimonial-container{
-        margin-top: 270px;
+        position: relative;
+        top: 505px;
     }    
     .tstm-tittle{
-        width: 100%;
+        width: 10%;
         height: 64px;
+        position: relative;
+        left: 27%;
         margin: 40px 10px 10px 10px;
     }
     .tstm-big-tittle{
@@ -127,8 +144,9 @@
     .tstm-small-tittle{
         width: 295px;
         height: 61px;
-        margin-top: 23px;
-        margin-left: 150px;
+        position: relative;
+        top: 30px;
+        left: 30%;
           
     }
     .p-tstm-small-tittle{
@@ -140,9 +158,14 @@
          
     }
     .tstm-discription{
-        width: 746px;
+        width: 26%;
         height: 324px;
-        margin-top: 50px;
-        margin-bottom: 100px;     
+        position: relative;
+        top: 50px;
+        left: 30%;     
+    }
+    .tstm-img{
+        height: 100px;
+        width: 150px;
     }
 }
