@@ -93,10 +93,10 @@
     color: rgba(39, 39, 39, 1);    
 }
 .tstm-img{
-    width: 104px;
-    height: 69px;
+    width: 134px;
+    height: 99px;
     position: relative;
-    top: -119px;
+    top: -100px;
     margin-left: 69%;
 }
 @media(min-width:700px){

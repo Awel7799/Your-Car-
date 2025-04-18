@@ -4,6 +4,7 @@ import Service from "./component/service/service"
 import Carousel from "./component/cars/carousel"
 import Gallary from "./component/carGallary/Gallary"
 import Testimonial from "./component/testimonial/Testimonial"
+import CarsBrand from "./component/carsBrand/carsBrand"
 import CartProvider from "./component/cartContext/CartProvider"
 import CartDetail from "./component/cartDetail/cartDetial"
 import Main from "./component/Header/main"
@@ -25,6 +26,7 @@ function App() {
         <Carousel />
         <Gallary />
         <Testimonial />
+        <CarsBrand />
     </CartProvider>
     </Productprovider>
     </>
