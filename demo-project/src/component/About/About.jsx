@@ -3,7 +3,7 @@ import carimage from '../../assets/pngegg 1.png';
 import background from '../../assets/pngegg (1) 1.png';
 function About(){
     return(
-      <div className="about-page-container">
+      <div id="about" className="about-page-container">
           <div className="page-text">
                 <div className="tittle">
                    <div className="small-tittle">

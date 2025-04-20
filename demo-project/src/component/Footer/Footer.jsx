@@ -2,7 +2,7 @@ import './Footer.css'
 
 function footer(){
     return(
-    <div className='footer'>   
+    <div id='contact' className='footer'>   
         <div className='footer-general-container'>
            <div className='footer-discription'>
               <div className='discription-tittle'>

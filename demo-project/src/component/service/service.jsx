@@ -4,7 +4,7 @@ import secondicon from '../../assets/icons8-lease-100 1.png';
 import thirdicon from '../../assets/Vector (2).png';
 function Service(){
     return(
-       <div className='service-page-container'>
+       <div id='service' className='service-page-container'>
          <div className='service-tittle'>
                 <div className='big-S-tittle'>
                     <p className='p-big-S-tittle'>Services</p>

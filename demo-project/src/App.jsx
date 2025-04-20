@@ -10,6 +10,7 @@ import CartProvider from "./component/cartContext/CartProvider"
 import CartDetail from "./component/cartDetail/cartDetial"
 import Main from "./component/Header/main"
 import React,{useState} from "react"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Productprovider } from "./component/cartContext/productContext"
 
 function App() {
@@ -35,4 +36,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

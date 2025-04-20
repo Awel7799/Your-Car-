@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import cart from '../../assets/Group.svg';
 import menu from '../../assets/Vector (1).svg';
 import './Header.css';
+import { Link } from 'react-router-dom'; 
 import cartContext from '../cartContext/cartContext.jsx';
 
 function Header({ onCartClick }) {
@@ -14,7 +15,7 @@ function Header({ onCartClick }) {
   };
 
   return (
-    <header className='general-container'>
+    <header id='home' className='general-container'>
     <nav className='navbar'>
       <div className='navbar-container'>
         <div>
@@ -23,11 +24,11 @@ function Header({ onCartClick }) {
 
          <div className={`link-container ${isOpen ? 'open' : ''}`}>
             <ul className='nav-links'>
-              <li><a className='contact-link' href="#">Home</a></li>
-              <li><a className='contact-link' href="#">About</a></li>
-              <li><a className='contact-link' href="#">Service</a></li>
-              <li><a className='contact-link' href="#">Cars</a></li>
-              <li><a className='contuctus-link' href="#">Contact Us</a></li>
+              <li><a className='contact-link' href="#home">Home</a></li>
+              <li><a className='contact-link' href="#about">About</a></li>
+              <li><a className='contact-link' href="#service">Service</a></li>
+              <li><a className='contact-link' href="#cars">Cars</a></li>
+              <li><a className='contuctus-link' href="#contact">Contact Us</a></li>
             </ul>
           </div>
 

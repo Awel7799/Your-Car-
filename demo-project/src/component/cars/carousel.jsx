@@ -34,7 +34,7 @@ const decrease=()=>{
    }
 
     return(
-     <div className='general-car-container'>
+     <div id='cars' className='general-car-container'>
          <div className='car-tittle'>
             <div className='big-car-tittle'>
                <p className='p-big-car-tittle'>CARS</p>

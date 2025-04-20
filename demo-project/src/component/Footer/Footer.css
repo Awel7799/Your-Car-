@@ -1,10 +1,8 @@
 .footer{
-    border: 1px solid black;
     width: 100%;
     height: 700px;
 }
 .footer-general-container{
-    border: 1px solid black;
     width: 97%;
     height: 650px;
     margin: 3px;
@@ -18,7 +16,6 @@
     
 }
 .discription-tittle{
-    border: 1px solid black;
     width: 125px;
     height: 41px;
     position: relative;
@@ -42,11 +39,11 @@
     color: rgba(116, 25, 6, 1);  
 }
 .discription-detail{
-    border: 1px solid black;
     width: 99%;
     height: 190px;
     position: relative;
     left: 5px;
+    top: 15px;
 }
 .p-discription-detail{
     width: 252px;
@@ -72,16 +69,16 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
-    letter-spacing: 0%;
-    color: rgba(116, 25, 6, 1);    
+    letter-spacing: 0%;   
 }
 .subscription-tittle{
-    border: 1px solid black;
     width: 50%;
     height: 30px;
+    position: relative;
+    left: 100px;
+    padding: 3px;
 }
 .subscription-discription{
-    border: 1px solid black;
     width: 97%;
     height:67px;
     margin: 3px;
@@ -95,18 +92,21 @@
     line-height: 20px;
     letter-spacing: 5%;
     text-align: center;
-    color:rgba(18, 39, 61, 1) ;    
+    color:rgba(18, 39, 61, 1) ;   
+    position: relative;
+    left: 15%; 
 }
 .email-box{
-    border: 1px solid black;
     width: 98%;
-    height: 70px;
+    height: 120px;
 }
 .subsc-btn{
     border: none;
     border-radius: 2px;
     width: 100px;
-    height: 30px;
+    height: 40px;
+    position: relative;
+    left: 40%;
     font-family: Lato;
     font-weight: 700;
     font-size: 18px;
@@ -121,24 +121,53 @@
     height: 54px;
     border-color:rgba(116, 25, 6, 1) ;
     border-width: 0.5px;
-     
+    position: relative;
+    top: 59px;
+    right: 40px;
 }
 .footer-contact{
-    border: 3px solid rgb(223, 25, 25);
     width: 231px;
-    height: 189px;
+    height: 150px;
+    position: relative;
+    top: 50px;
+    left: 20%;
 }
 .social-media{
-    border: 1px solid rgb(14, 11, 11);
     width: 98%;
     height: 80px;
     margin: 3px;
+    padding: 30px;
 }
 @media(min-width:900px){
     .footer-general-container{
         display: flex;
+        justify-content: space-between;
         position: relative;
-        top: 500px;
-        height: 300px;
+        top: 6px;
+        height: 500px;
+        width: 100%;
     }
+    .footer-discription{
+        position: relative;
+        left: -10px;
+    }
+    .footer-subscription{
+        width: 350px;
+    }
+    .input-box{
+        position: relative;
+        left: -10%;
+        top: 70px;
+    }
+    .footer-contact{
+        position: relative;
+        left: 10px;
+    }
+    .footer{
+        height: 300px;
+        position: relative;
+        top: 400px;
+        left: 1%;
+    }
+
 }
