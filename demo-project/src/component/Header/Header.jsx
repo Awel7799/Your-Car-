@@ -9,7 +9,7 @@ function Header({ onCartClick }) {
   const [isOpen, setIsOpen] = useState(false);
 
   // ✅ Use context value here
-  const { cart: carts } = useContext(cartContext);
+  const { cartItems } = useContext(cartContext);
   const handleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -34,7 +34,7 @@ function Header({ onCartClick }) {
 
         <div className='cart-icon' onClick={onCartClick}>
           <img className='cart-img' src={cart} alt="shopping cart" />
-          <p className='item-amount'>{carts?.length || 0}</p>
+          <p className='item-amount'>{cartItems?.length || 0}</p>
         </div>
         <div className='menu-icon'>
           <button className='menu-btn' onClick={handleMenu} >
