@@ -3,7 +3,6 @@
   box-sizing: border-box;
 }
 .general-container{
-  padding-top: -70px;
   margin-bottom: 85px;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -127,6 +126,16 @@
   height: 22px;
   padding: 1px;
 
+}
+@media(min-width:600px){
+  .cart-icon{
+    position: relative;
+    left: 85%;
+  }
+  .menu-icon{
+    position: absolute;
+    right: 20px;
+  }
 }
 @media(min-width:900px){
 .cart-icon{
