@@ -99,6 +99,20 @@
     top: -100px;
     margin-left: 69%;
 }
+@media(min-width:500px){
+    .tstm-tittle{
+        width: 50%;
+        position: relative;
+        top: -10px;
+        left: 20%;
+    }
+    .tstm-discription{
+        border: 1px solid black;
+        position: relative;
+        top: 10px;
+        left: 17%;
+    }
+}
 @media(min-width:700px){
     .tstm-tittle{
         width: 50%;
@@ -116,13 +130,13 @@
 @media(min-width:900px){
     .testimonial-container{
         position: relative;
-        top: 505px;
+        top: 300px;
     }    
     .tstm-tittle{
         width: 10%;
         height: 64px;
         position: relative;
-        left: 29%;
+        left: 20%;
         margin: 40px 10px 10px 10px;
     }
     .tstm-big-tittle{
@@ -168,4 +182,20 @@
         height: 100px;
         width: 150px;
     }
+    .p-tstm-discription{
+        position: relative;
+        left: -7%;
+    }
+}
+@media(min-width:1100px){
+    .testimonial-container{
+        position: relative;
+        top: 400px;
+    } 
+}
+@media(min-width:1300px){
+    .testimonial-container{
+        position: relative;
+        top:530px;
+    } 
 }
