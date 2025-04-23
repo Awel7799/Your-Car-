@@ -1,4 +1,12 @@
 import './Footer.css'
+import message from '../../assets/mdi_email.png';
+import FB from '../../assets/Vector (5).png';
+import twitter from '../../assets/Vector (6).png';
+import instagram from '../../assets/Vector (7).png';
+import phone from '../../assets/Vector (8).png';
+import location from '../../assets/Vector (9).png';
+
+
 
 function footer(){
     return(
@@ -6,7 +14,7 @@ function footer(){
         <div className='footer-general-container'>
            <div className='footer-discription'>
               <div className='discription-tittle'>
-                <p className='p-discription-tittle'>Your <span className='spancar'>Car</span></p>
+                <p className='p-discription-tittle'>Your<span className='spancar'>Car</span></p>
               </div>
               <div className='discription-detail'>
                   <p className='p-discription-detail'>
@@ -35,14 +43,25 @@ function footer(){
            </div>
            <div className='footer-contact'>
             <p className='contact-tittle'>Contact</p>
-            <p className='location'>2038 2nd Avenue, <br />
-            Las Vegas, United States</p>
-            <p className='phone-No'> 01477678449405 <br /> 01444773421423</p>
-             <p className='email-adress'>info@YourCar.com</p>
+            <p className='location'><span>2038 2nd Avenue,</span>
+            <img src={location} alt="" />
+            <span className='cont-info'>Las Vegas,United States</span></p>
+            <p className='phone-No'> <span>01477678449405</span>
+            <img src={phone} alt="" />
+             <span className='cont-info'>01444773421423</span></p>
+             <p className='email-adress'>
+            <span >info@YourCar.com</span><img  src={message} alt="" />
+                </p>
            </div>
         </div>
         <div className='social-media'>
-         
+        <div className='social-med-cont'>
+            <img src={FB} alt="" />
+            <img src={twitter} alt="" />
+            <img src={instagram} alt="" />
+         </div>
+         <hr />
+         <p className='copyright-txt'>© Copyright 2023 · YourCar All rights reserved </p>
         </div>
     </div>     
 

@@ -6,14 +6,18 @@
 .first-row-brand{
     width: 99%;
     height: 90px;
-    margin: 5px;
     display: flex;
+    position: relative;
+    left: 5%;
+    top: 5%;
 }
 .second-row-brand{
     width: 99%;
     height: 90px;
-    margin: 5px;
     display: flex ;
+    position: relative;
+    left: 5%;
+    top: 5%;
 }
 .logo-img{
     width: 60px;
@@ -30,6 +34,53 @@
     }
     .second-row-brand{
         position: relative;
-        left: -30px;
+        top: -450px;
+        left: -10%;
+    }
+    .first-row-brand{
+        position: relative;
+        top: -450px;
+        left: 0%;
+    }
+}
+@media(min-width:900px){
+    .general-brand-container{
+        display: flex;
+        position: relative;
+        top: 800px;
+    }
+    .second-row-brand{
+        position: relative;
+        top: -450px;
+        left: -150px;
+    }
+    .first-row-brand{
+        position: relative;
+        top: -450px;
+        left: 0%;
+    }
+}
+@media(min-width:1100px){
+    .general-brand-container{
+        width: 100%;
+        display: flex;
+        position: relative;
+        top: 900px;
+    }
+    .second-row-brand{
+        margin-left: 180px;
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        position: relative;
+        top: -450px;
+    }
+    .first-row-brand{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 100px;
+        width: 40%;
+        position: relative;
+        top: -450px;
     }
 }
