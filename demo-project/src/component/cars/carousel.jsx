@@ -1,10 +1,11 @@
 import './carousel.css';
 import carImage from '../../assets/Group 1133.png';
+import left from '../../assets/Arrow Left.png';
+import right from '../../assets/Arrow Left (1).png';
 import React, { useState, useContext } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { useProductContext } from '../cartContext/productContext';
 import cartContext from '../cartContext/cartContext';
-
 function Carousel() {
   const { products } = useProductContext();
   const { addToCart } = useContext(cartContext); // ✅ Use hook at the top level
@@ -56,7 +57,7 @@ function Carousel() {
       </div>
 
       <div className="right-left-btn">
-        <button className="prv-btn" onClick={handlePrev}>left</button>
+        <button className="prv-btn" onClick={handlePrev}><img src={left} alt="" /></button>
 
         {visibleProducts.map((product) => (
           <div key={product.id} className="card-list">
@@ -74,18 +75,18 @@ function Carousel() {
                 <img src={carImage} alt="seat" />
               </div>
               <div className="No-of-item">
-                <button className="dec-btn" onClick={() => decrease(product.id)}>-</button>
+                <button className="innc-btn" onClick={() => decrease(product.id)}>-</button>
                 <p className="counter">{counts[product.id] || 0}</p>
-                <button className="inc-btn" onClick={() => increase(product.id)}>+</button>
+                <button className="innc-btn" onClick={() => increase(product.id)}>+</button>
 
                 {/* ✅ Add the correct product */}
-                <button onClick={() => addToCart(product)}>Add to Cart</button>
+                <button className='add-to-cart' onClick={() => addToCart(product)}>+</button>
               </div>
             </div>
           </div>
         ))}
 
-        <button className="Next-btn" onClick={handleNext}>right</button>
+        <button className="Next-btn" onClick={handleNext}><img src={right} alt="" /></button>
       </div>
     </div>
   );
