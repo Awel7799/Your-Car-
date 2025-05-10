@@ -1,28 +1,28 @@
-.about-page-container{
+.about-page-container{ 
     box-sizing: border-box;
+    overflow: hidden;
     overflow-x: hidden;
-    margin-top: 50px;
     margin-bottom: 50px;
     width: 100%;
     height: 750px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    min-width: 320px;
 }
-.page-text{
-    margin-left: 20px;
+.page-text{  
+    margin-top: 10px;
     box-sizing: border-box;
-    width: 100%;
-    height: 700px;
+    overflow: hidden;
+    height: 730px;
+    margin-left: 10%;
     position: absolute;
     overflow-y: hidden;
     align-items: center;
 }
 .tittle{
-
-    width: 80%;
+    width: 90%;
     height: 85px;
-    padding-left: 5%;
-    padding-bottom: 105px;
 }
 .small-tittle{
     width: 91px;
@@ -42,33 +42,28 @@
     z-index: 4099;
 }
 .bigg-tittle{
-    width: 100%;
     height: 85px;
     position: relative;
     top: -40px;
-    left: 2%;
     z-index: 1;
     display: flex;
 }
 .p-bigg-tittle{
     position: relative;
-    margin-left: -3%;
-    width:100%;  
+    width: 100%;
     font-family: Lora;
     font-weight: 700;
     font-size: 64px;
     line-height: 100%;
     letter-spacing: 0%;
     color:rgba(235, 235, 235, 1);
-    z-index: 2;
 }
-.discription{ 
-    margin-left: -29px;
-    width: 60%;
-    height: 487px;
+.discription{   
+    width: 90%;
+    height: auto;
     padding: 5px;
     position: relative;
-    top: 4px;
+    top: 20px;
     left: 10px;
     font-family: Nunito Sans;
     font-weight: 400;
@@ -94,12 +89,14 @@
 @media(min-width:900px){
     .page-text{
         width: 56%;
+        position: relative;
+        left: -10px;
     }    
     .discription{
         width: 90%;
         position: relative;
         top: 50px;
-        left: 60px;
+        left: 10px;
     }
     .About-page-car-img{
         overflow-y: hidden;
@@ -113,8 +110,8 @@
     }
     .small-tittle{
         position: relative;
-        left: -12%;
-        top: 32px;
+        left: -10%;
+        top: 20px;
         font-size: 56px;
     }
     .p-bigg-tittle{

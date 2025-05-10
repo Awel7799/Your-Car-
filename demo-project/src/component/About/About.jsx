@@ -10,7 +10,7 @@ function About(){
                       <p className="small-tittle-p">About </p>
                    </div>
                    <div className="bigg-tittle">
-                      <p className="p-bigg-tittle">ABOUT US </p>    
+                      <p className="p-bigg-tittle">ABOUT&nbsp;US </p>    
                    </div>
                 </div>
                 <div className="discription">

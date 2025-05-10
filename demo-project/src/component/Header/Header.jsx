@@ -15,14 +15,12 @@ function Header({ onCartClick }) {
   };
 
   return (
-    <header id='home' className='general-container'>
-    <nav className='navbar'>
-      <div className='navbar-container'>
+      <nav className='navbar-container'>
         <div>
           <p className='logo'>Your<span className='car-span'>Car</span></p>
         </div>
 
-         <div className={`link-container ${isOpen ? 'open' : ''}`}>
+        <div className={`link-container ${isOpen ? 'open' : ''}`}>
             <ul className='nav-links'>
               <li><a className='contact-link' href="#home">Home</a></li>
               <li><a className='contact-link' href="#about">About</a></li>
@@ -30,7 +28,7 @@ function Header({ onCartClick }) {
               <li><a className='contact-link' href="#cars">Cars</a></li>
               <li><a className='contuctus-link' href="#contact">Contact Us</a></li>
             </ul>
-          </div>
+        </div>
 
         <div className='cart-icon' onClick={onCartClick}>
           <img className='cart-img' src={cart} alt="shopping cart" />
@@ -41,9 +39,7 @@ function Header({ onCartClick }) {
             <img src={menu} alt="menu" />
           </button>
         </div>
-      </div>
-    </nav>
-    </header>
+      </nav>
   );
 }
 

@@ -25,11 +25,6 @@ function App() {
         <Main />
         <About />
         <Service />
-        <Carousel />
-        <Gallary />
-        <Testimonial />
-        <CarsBrand />
-        <Footer />
     </CartProvider>
     </Productprovider>
     </>

@@ -14,8 +14,8 @@ function Service(){
                 </div>
          </div>
          <div className='service-cards'>
-             <div className='car-selling-card'>
-                  <div className='diamond-icon'>
+             <div className='card'>
+                  <div className='icon'>
                       <img src={thirdicon} alt="star icon" />
                   </div>
                   <div className='diamond-discription'>
@@ -29,8 +29,8 @@ function Service(){
                     </p>
                   </div>
              </div>
-             <div className='car-rental-card'>
-                  <div className='hands-icon'>
+             <div className='card'>
+                  <div className='icon'>
                     <img src={secondicon} alt="hands icon" />
                   </div>
                   <div className='hands-icon-discription'>
@@ -45,8 +45,8 @@ function Service(){
                       </p>
                   </div>
              </div>
-             <div className='car-seles-card'>
-                <div className='star-icon'>
+             <div className='card'>
+                <div className='icon'>
                       <img src={firsticon} alt="" />
                 </div>
                 <div className='star-icon-discription'>

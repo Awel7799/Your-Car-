@@ -5,10 +5,10 @@
     align-items: end;
     position: absolute;
     right: 0%;
-    width: 375px;
-    height: 699px;
-    margin-top: -750px;
-    z-index: 10;
+    width: 370px;
+    height: 620px;
+    margin-top: -20px;
+    z-index: 1000;
 }
 .item-section{
    width: 331.3333435058594px;
@@ -115,10 +115,11 @@
 }
 @media(min-width:900px){
     .cartDetailContrainer{
-        height: 514px;
+        height: 620px;
         position: absolute;
-        top: 825px;
-        right: -1%;
+        top: 100px;
+        right: 1px;
+        z-index: 1000;
     }
     .item-section{
         position: relative;
