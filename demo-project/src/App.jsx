@@ -28,6 +28,8 @@ function App() {
         <About />
         <Service />
         <Carousel />
+        <Gallary />
+        <Testimonial />
     </CartProvider>
     </Productprovider>
     </>

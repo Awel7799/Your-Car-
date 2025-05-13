@@ -1,5 +1,6 @@
 /* General container styling */
 .general-car-container {
+  min-width: 320px;
   width: 100%;
   height: 1000px;
   padding: 20px;
@@ -10,6 +11,8 @@
 
 /* Car title section */
 .car-tittle {
+  position: relative;
+  top: 30px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -28,6 +31,8 @@
 }
 
 .small-car-tittle {
+  position: relative;
+  top: -27px;
   margin: 0 auto;
   max-width: 90%;
 }
@@ -47,6 +52,12 @@
 
 /* Card styling */
 .card-list {
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  position: relative;
+  left: 15%;
+  min-width: 320px;
   width: 80%;
   height: 500px;
   max-width: 350px;
@@ -148,13 +159,19 @@
   position: relative;
   left: -50px;
   width: 100%;
+  min-width: 320px;
   padding-bottom: 40px;
   overflow: visible;
+  align-items: center;
+  align-content: center;
 }
 
 .carousel-wrapper{
+  min-width: 320px;
   display: flex;
   width: 100vw;
+  align-self: center;
+  align-content: center;
 }
 .slick-dots {
   display: flex !important;
@@ -163,6 +180,7 @@
   padding: 0;
   list-style: none;
   position: relative;
+  top: 590px;
 }
 
 .slick-dots li {
@@ -189,20 +207,20 @@
 .custom-arrow-right{
   background-color: transparent;
   position: relative;
-  left: -50px;
+  left: -70px;
   top: 250px;
   border: none;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+   width: 60px;
+  height: 70px;
   padding: 0;
 }
 .custom-arrow-left{
   background-color: transparent;
   border: none;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 70px;
   padding: 0;
   position: relative;
   left: -30px;
@@ -239,7 +257,7 @@
 }
 
 /* Responsive layout */
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .general-car-container {
     padding: 40px;
   }
@@ -261,20 +279,17 @@
     font-size: 2.5rem;
     margin-top: 20px;
   }
-
+.small-car-tittle {
+  position: relative;
+  top: -47px;
+  margin: 0 auto;
+  max-width: 90%;
+}
   .card-list {
-    width: 28%;
-    margin: 25px;
-  }
-
-  .add-to-cart-btn {
-    background-color: brown;
-    height: 50px;
-    width: 60px;
-    border: none;
-    border-radius: 6px;
-    margin-left: 25px;
-    color: white;
+     position: relative;
+     left: 0%;
+     width: 28%;
+     margin: 25px;
   }
 
   .right-left-btn {
