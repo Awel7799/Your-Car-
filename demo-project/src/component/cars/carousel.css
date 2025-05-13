@@ -1,221 +1,288 @@
-.general-car-container{
-    width:100%;
-    box-sizing: border-box;
-    height: 1000px;
-    margin: 5px;
-    background-color: white;
+/* General container styling */
+.general-car-container {
+  width: 100%;
+  height: 1000px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  box-sizing: border-box;
 }
-.car-tittle{
-    width: 98%;
-    height:200px;
-    position: relative;
-    top: -50px;
+
+/* Car title section */
+.car-tittle {
+  text-align: center;
+  margin-bottom: 20px;
 }
-.big-car-tittle{
-    width: 185px;
-    height: 85px;
-    margin: 45px 20% 0% 20%;    
+
+.big-car-tittle {
+  margin: 0 auto;
+  max-width: 90%;
 }
-.p-big-car-tittle{
-    font-family: Lora;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: rgba(235, 235, 235, 1);    
+
+.p-big-car-tittle {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #ebebeb;
+  line-height: 1;
 }
-.small-car-tittle{
-    width: 70px;
-    height: 41px;
-    margin: -45px 20% 0% 32%;
+
+.small-car-tittle {
+  margin: 0 auto;
+  max-width: 90%;
 }
-.p-small-car-tittle{
-    font-family: Lora;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: rgba(116, 25, 6, 1);    
+
+.p-small-car-tittle {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #741906;
+  line-height: 1;
+  margin-top: 10px;
 }
-.right-left-btn{
-    display: flex;
+
+/* Navigation buttons container */
+
+
+
+/* Card styling */
+.card-list {
+  width: 80%;
+  height: 500px;
+  max-width: 350px;
+  margin: 40px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 4px 10px 30px 0px rgba(0, 0, 0, 0.1);
+
 }
-.card-list{
-    width: 80%;
-    height: 430px;   
-    position: relative;
-    top: -80px;
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+/* Car image */
+.cards-car {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.cards-car{
-    margin-left: 20%;
-    width: 200px;
-    height: 205.07691955566406px;  
+
+.car-img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  padding: 10px;
 }
-.car-img{
-    position: relative;
-    top: 50px;
-    left: -5%;
-    padding: 10px;
+
+/* Description styling */
+.cards-discription {
+  padding: 10px 0;
+  text-align: center;
 }
-.product-name{
-    width: 84px;
-    height: 29px;
-    position: relative;
-    top: -50px;
-    left: 32%;
-    display: inline;
-    font-family: Nunito Sans;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    color: rgba(116, 25, 6, 1);     
+
+.product-name {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #741906;
+  margin: 5px 0;
 }
-.p-cards-discription{
-    width:90%;
-    height: 95.29230499267578px;
-    position: relative;
-    top: -30px;
-    left: 7%;
-    font-family: Nunito Sans;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    letter-spacing: 0%;
-    color: rgba(35, 34, 34, 0.96);
+
+.product-brand {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: #232222;
+  opacity: 0.9;
+  margin: 5px 0;
 }
-.product-brand{
-    width: 143px;
-    height: 13px;
-    position: relative;
-    top: -40px;
-    left: 22%;
-    font-family: Nunito Sans;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    color: rgba(35, 34, 34, 0.96);     
+
+.p-cards-discription {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #232222;
+  line-height: 1.4;
+  margin: 10px auto;
+  width: 90%;
 }
-.cards-discription{
-    width: 99%;
-    height: 230px;
-    margin: 4px;
+
+/* Buttons */
+.cards-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
 }
-.cards-button{
-    width: 100%;
-    height: 50px;
-    margin: 4px;
-    display: flex;
+
+.No-of-item {
+  position: relative;
+  right: 0%;
+  left: -40px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
-.No-of-item{
-    width: 60px;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 3%;
-    position: relative;
-    left: 0px;
-    top: -80px;
+
+.innc-btn {
+  background-color: brown;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
 }
-.seat-No{
-    
-    height: 80px;
-    width: 110px;
-    padding: 10px;
-    position: relative;
-    top: -80px;
-    left: 0px;
+
+.seat-No {
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+  font-size: 0.9rem;
 }
-.prv-btn{
-    border: none;
-    margin-top: 150px;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
+.custom-arrows-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  margin-top: 20px;
 }
-.prv-btn img{
-    color: brown;
-    margin-top: 0%;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
+.carousel-section {
+  position: relative;
+  left: -50px;
+  width: 100%;
+  padding-bottom: 40px;
+  overflow: visible;
 }
-.Next-btn{
-    border: none;
-    margin-top: 150px;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
+
+.carousel-wrapper{
+  display: flex;
+  width: 100vw;
 }
-.Next-btn img{
-    color: brown;
-    margin-top: 0px;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+  position: relative;
 }
-.innc-btn{
-    background-color: brown;
-    padding: 10px;
-    border: none;
-    margin-left: 0%;
-    border-radius: 2px;
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
 }
-.add-to-cart{
-    background-color: brown;
-    padding: 10px;
-    border: none;
-    margin-left: 30px;
-    border-radius: 50%;
+
+.slick-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
-@media(min-width:700px){
-.right-left-btn{
-    padding: 5%;
-}   
-.card-list{
+
+.slick-dots .slick-active button {
+  background-color: #741906;
+}
+
+
+/* Custom arrow buttons */
+.custom-arrow-right{
+  background-color: transparent;
+  position: relative;
+  left: -50px;
+  top: 250px;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+.custom-arrow-left{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  position: relative;
+  left: -30px;
+  top: 250px;
+  z-index: 10;
+}
+.custom-arrow img {
+  position: relative;
+  top: 250px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* Slick Dots Styling */
+
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.slick-dots button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots .slick-active button {
+  background-color: #741906;
+}
+
+/* Responsive layout */
+@media (min-width: 700px) {
+  .general-car-container {
+    padding: 40px;
+  }
+.carousel-section {
+  width: 95%;
+  padding-bottom: 40px;
+  overflow: visible;
+}
+  .car-tittle {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .p-big-car-tittle {
+    font-size: 6rem;
+  }
+
+  .p-small-car-tittle {
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+
+  .card-list {
     width: 28%;
     margin: 25px;
-    border-radius: 5px;
-}
-.car-tittle{
-    width: 400px;
-    position: relative;
-    left: 38%;
-    top: 10px;
-}
-.product-brand{
-    position: relative;
-    left: 28%;
-}
-.p-big-car-tittle{
-    font-family: Lora;
-    font-weight: 700;
-    font-size: 128px;
-    line-height: 100%;
-    letter-spacing: 0%;
-}
-.p-small-car-tittle{
-    font-family: Lora;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    position: relative;
-    top: 52px;
-    left: 66px;    
-}
-.add-to-cart-btn{
+  }
+
+  .add-to-cart-btn {
     background-color: brown;
     height: 50px;
     width: 60px;
     border: none;
     border-radius: 6px;
     margin-left: 25px;
-    }
+    color: white;
+  }
 
+  .right-left-btn {
+    justify-content: flex-end;
+    padding: 10px;
+  }
+
+  .product-brand {
+    font-size: 1rem;
+  }
 }

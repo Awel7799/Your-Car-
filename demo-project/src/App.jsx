@@ -10,6 +10,8 @@ import CartProvider from "./component/cartContext/CartProvider"
 import CartDetail from "./component/cartDetail/cartDetial"
 import Main from "./component/Header/main"
 import React,{useState} from "react"
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Productprovider } from "./component/cartContext/productContext"
 
@@ -25,6 +27,7 @@ function App() {
         <Main />
         <About />
         <Service />
+        <Carousel />
     </CartProvider>
     </Productprovider>
     </>
