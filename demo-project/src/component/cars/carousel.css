@@ -56,9 +56,9 @@
   align-self: center;
   align-content: center;
   position: relative;
-  left: 15%;
+  left: -10px;
   min-width: 320px;
-  width: 80%;
+  width: 90%;
   height: 500px;
   max-width: 350px;
   margin: 40px;
@@ -181,28 +181,27 @@
   list-style: none;
   position: relative;
   top: 590px;
+   width: 5px;
+  height: 5px;
 }
 
 .slick-dots li {
   display: inline-block;
   margin: 0 5px;
+  border-radius: 50%;
+   width: 5px;
+  height: 5px;
 }
 
 .slick-dots button {
-  width: 10px;
-  height: 10px;
+   width: 5px;
+  height: 5px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: #741906;
   border: none;
   cursor: pointer;
   padding: 0;
 }
-
-.slick-dots .slick-active button {
-  background-color: #741906;
-}
-
-
 /* Custom arrow buttons */
 .custom-arrow-right{
   background-color: transparent;
@@ -240,20 +239,29 @@
 .slick-dots li {
   display: inline-block;
   margin: 0 6px;
+  width: 5px;
+  height: 5px;
 }
 
 .slick-dots button {
-  width: 12px;
-  height: 12px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: #741906;
   border: none;
   padding: 0;
   cursor: pointer;
 }
+/* Default dot color (inactive) */
+.slick-dots li button:before {
+  color: #741906;         /* Change to your desired color */
+  opacity: 0.5;         /* Optional: make inactive dots dim */
+}
 
-.slick-dots .slick-active button {
-  background-color: #741906;
+/* Active dot color */
+.slick-dots li.slick-active button:before {
+  color: #741906;       /* Example: bright yellow for active dot */
+  opacity: 1;
 }
 
 /* Responsive layout */

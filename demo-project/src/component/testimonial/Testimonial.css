@@ -1,201 +1,129 @@
-.testimonial-container{
-    border: 1px solid black;
-    width: 100%;
-    height: 634px;
-    margin-top: 0px;
-    background: rgba(18, 39, 61, 1);
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh; /* full height of viewport */
+  width: 100%;
+  height: 876px;
+  background: rgba(18, 39, 61, 1);
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  top: -100px;
 }
-.tstm-tittle{
-    width: 98%;
-    height: 64px;
-    margin: 40px 10px 10px 10px;
+
+.tstm-tittle {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  top: -100px;
 }
-.tstm-big-tittle{
-    width: 309px;
-    height: 44px;
-    margin: 4px 0px 0px 14%;
-    opacity: 0.05;
+
+.tstm-big-tittle {
+  opacity: 0.05;
 }
-.p-tstm-big-tittle{
-    font-family: Lora;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color:rgba(235, 235, 235, 1) ;    
+
+.p-tstm-big-tittle {
+  font-family: Lora;
+  font-weight: 700;
+  font-size: 40px;
+  color: rgba(235, 235, 235, 1);
+  margin: 0;
 }
-.tstm-small-tittle{
-    width: 197px;
-    height: 41px;
+
+.tstm-small-tittle {
+  margin-top: -20px;
 }
+
+.p-tstm-small-tittle {
+  font-family: Lora;
+  font-weight: 700;
+  font-size: 32px;
+  color: white;
+  margin: 0;
+}
+
+.testimonial-slider {
+  background-color: white;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.p-tstm-discription {
+  font-family: Lato;
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(39, 39, 39, 1);
+  margin-top: 30px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+.star-img {
+  display: block;
+  margin: 10px auto;
+  width: 94px;
+  height: auto;
+}
+
+.tstm-name,
+.tstm-adress {
+  text-align: center;
+  font-family: Nunito Sans;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(39, 39, 39, 1);
+  margin: 5px 0;
+}
+
+.tstm-img {
+  display: block;
+  margin: 20px auto 0;
+  width: 100px;
+  height: auto;
+   position: relative;
+  top: 50px;
+  left: 50%;
+}
+
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  margin-top: -200px;
+  padding: 0;
+}
+
+.slick-dots li button:before {
+  color: white !important;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+}
+@media(min-width:800px){
+    .p-tstm-big-tittle {
+      font-family: Lora;
+font-weight: 700;
+font-size: 128px;
+line-height: 100%;
+letter-spacing: 0%;
+  color: rgba(235, 235, 235, 1);
+  margin: 0;
+}
+
 .p-tstm-small-tittle{
-    width: 197px;
-    height: 41px;
-    margin: -20px 0px 0px 47% ;
     font-family: Lora;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 100%;
-    letter-spacing: 0%;     
-    color:rgba(255, 255, 255, 1) ;  
+font-weight: 700;
+font-size: 48px;
+line-height: 100%;
+letter-spacing: 0%;
+
 }
-.tstm-discription{
-    border: 1px solid black;
-    width: 323px;
-    height: 351px;
-    margin-left: 8%;
-    background: rgba(255, 255, 255, 1);
-}
-.p-tstm-discription{
-    width: 220px;
-    height: 198px;
-    margin-top: 50px;
-    margin-left: 18%;
-    font-family: Lato;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 14px;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: center;
-    color:rgba(39, 39, 39, 1);
-    
-}
-.star-img{
-    width: 94px;
-    height: 13.925926208496094px;    
-    color:rgba(248, 215, 164, 1);
-    margin-left: 35%;
-}
-.tstm-name{
-    width: 177.6385498046875px;
-    height: 49.0843391418457px;
-    margin-left: 20%;
-    font-family: Nunito Sans;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: center;
-    color: rgba(39, 39, 39, 1);
-}
-.tstm-adress{
-    width: 177.6385498046875px;
-    height: 49.0843391418457px;
-    margin-left:20%;
-    margin-top:-27px;
-    font-family: Nunito Sans;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: center;
-    color: rgba(39, 39, 39, 1);    
-}
-.tstm-img{
-    width: 134px;
-    height: 99px;
-    position: relative;
-    top: -100px;
-    margin-left: 69%;
-}
-@media(min-width:500px){
-    .tstm-tittle{
-        width: 50%;
-        position: relative;
-        top: -10px;
-        left: 20%;
-    }
-    .tstm-discription{
-        border: 1px solid black;
-        position: relative;
-        top: 10px;
-        left: 17%;
-    }
-}
-@media(min-width:700px){
-    .tstm-tittle{
-        width: 50%;
-        position: relative;
-        top: -10px;
-        left: 20%;
-    }
-    .tstm-discription{
-        border: 1px solid black;
-        position: relative;
-        top: 10px;
-        left: 17%;
-    }
-}
-@media(min-width:900px){
-    .testimonial-container{
-        position: relative;
-        top: 300px;
-    }    
-    .tstm-tittle{
-        width: 10%;
-        height: 64px;
-        position: relative;
-        left: 20%;
-        margin: 40px 10px 10px 10px;
-    }
-    .tstm-big-tittle{
-        margin-top: 100px;
-        width: 1005;
-        height: 165;
-        top: 4715px;
-        left: 217px;
-        opacity: 0.05;
-           
-    }
-    .p-tstm-big-tittle{
-        font-family: Lora;
-        font-weight: 700;
-        font-size: 88px;
-        line-height: 100%;
-        letter-spacing: 0%;
-    }
-    .tstm-small-tittle{
-        width: 295px;
-        height: 61px;
-        position: relative;
-        top: 30px;
-        left: 30%;
-          
-    }
-    .p-tstm-small-tittle{
-        font-family: Lora;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 100%;
-        letter-spacing: 0%;
-         
-    }
-    .tstm-discription{
-        width: 26%;
-        height: 324px;
-        position: relative;
-        top: 50px;
-        left: 30%;     
-    }
-    .tstm-img{
-        height: 100px;
-        width: 150px;
-    }
-    .p-tstm-discription{
-        position: relative;
-        left: -7%;
-    }
-}
-@media(min-width:1100px){
-    .testimonial-container{
-        position: relative;
-        top: 400px;
-    } 
-}
-@media(min-width:1300px){
-    .testimonial-container{
-        position: relative;
-        top:530px;
-    } 
 }

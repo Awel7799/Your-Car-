@@ -31,23 +31,29 @@ function Carousel() {
       [productId]: Math.max((prev[productId] || 0) - 1, 0),
     }));
   };
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: false, // ❌ Hide default arrows
-    responsive: [
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 1,
-        },
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3, // default for large screens
+  slidesToScroll: 1,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1024, // for tablets and small laptops
+      settings: {
+        slidesToShow: 2,
       },
-    ],
-  };
+    },
+    {
+      breakpoint: 700, // for mobile devices
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+};
+
 return (
  <div id="cars" className="general-car-container">
   <div className="car-tittle">
