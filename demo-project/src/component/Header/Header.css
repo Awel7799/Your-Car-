@@ -3,16 +3,22 @@
   box-sizing: border-box;
 }
 .navbar-container{
+  position: sticky;
+  top: 0px;
+  z-index: 1000; 
+  background-color: white;
   min-width: 320px;
-  background-color: transparent;
   flex-wrap: wrap;
   box-sizing: border-box;
   width: 100%;
   height: 75px;
+  margin-top: -20px;
 }
 .logo{ border: 1px;
   width: 132px;
   height: 42px;
+  position: relative;
+  top: 15px;
   margin:19px 15px 10px 14px;
   font-family: Lora;
   font-weight: 700;
@@ -21,16 +27,7 @@
   letter-spacing: 0%;
   color: #12273D;
 }
-/* Make navbar sticky and smooth */
-.navbar-container {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: transparent;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Style when scrolled */
+  /* Style when scrolled */
 .navbar-container.scrolled {
   background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -42,10 +39,6 @@
 }
 
 /* When navbar is scrolled */
-.navbar-container.scrolled .nav-links li a,
-.nav-links li a.scrolled-link {
-  color: #12273D;
-}
 
 .car-span{
   font-family: Lora;
@@ -58,12 +51,12 @@
 .link-container{
   background-color:rgba(18, 39, 61, 0.95);
   backdrop-filter: blur(50);
-  width: 50%;
-  height: 500px;
+  width: 60%;
+  height: 570px;
   margin-top: 20px;
   position: absolute;
-  top: 44px;
-  right: 1px;
+  top: 55px;
+  right: 0%;
   z-index: 11;
   display: none;
 }
@@ -78,9 +71,10 @@
 }
 .nav-links li {
   display: flex;
+  width: 186px;
   list-style: none;
   position: relative;
-  top: -10px;
+  top: -50px;
   left: 0%;
   padding: 10px;
 } 
@@ -115,7 +109,7 @@
   margin-right: 5px;
   margin-top: 20px;
   position: relative;
-  top: -55px;
+  top: -45px;
   left:80%;
   z-index: 100000;
 }
@@ -124,9 +118,13 @@
   height: 24px;
   margin-left: 100px;
   position: absolute;
-  top: 23px;
+  top: 25px;
   right: 5px;
   z-index: 20;
+}
+.cart-icon:hover{
+   cursor: pointer;
+
 }
 .menu-btn{
  border: none;
@@ -165,6 +163,29 @@
   }
 }
 @media(min-width:900px){
+  .navbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+  /* Style when scrolled */
+.navbar-container.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+/* Default link color */
+.nav-links li a {
+  color: #FAFAFA;
+  transition: color 0.3s ease;
+}
+
+/* When navbar is scrolled */
+.navbar-container.scrolled .nav-links li a,
+.nav-links li a.scrolled-link {
+  color: #12273D;
+}
 .cart-icon{
     position: relative;
     top: -135px;
@@ -190,11 +211,11 @@
 .nav-links{
   display: flex;
   position: relative;
-  top: -110px;
+  top: -90px;
   left: 30%;
 }
 .nav-links li{
-  margin: 57px 0px 0px 0px;
+  margin: 80px 0px 0px 0px;
   width: 110px;
   height: 45px;
   border-radius: 6px;

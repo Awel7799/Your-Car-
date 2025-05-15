@@ -1,32 +1,31 @@
 .cartDetailContrainer{
     background-color:rgb(18, 39, 61,0.95);
     overflow-x: hidden;
-    display:flex ;
+    display:block ;
     align-items: end;
-    position: absolute;
+    position: fixed;
     right: 0%;
     width: 370px;
-    height: 620px;
-    margin-top: -20px;
+    height: 584px;
+    margin-top:0px;
     z-index: 1000;
 }
 .item-section{
    width: 331.3333435058594px;
-   height: 251.33334350585938px;
+   height: auto;
    position: relative;
-   top: -400px;
+   top: 30px;
    left: 22px;
 }
 .delete-btn{
-    margin-top: 50%;
-    margin-left: -100%;
+    margin: 90% 0px 0px 90px;
     width: 189.8148193359375px;
     height: 41px;
     background-color: #741906;
     border-radius: 5px;
     border: none;
 }
-.individual-item{
+.individual-item{border: 1px solid black;
     margin-top: 10px;
     background-color:#FFFFFF ;
     box-shadow: 4px 10px 30px 0px #0000001A;
@@ -54,9 +53,9 @@
     color:#232222F5;
     ;
 }
-.item-img{
-    height: 100px;
-    width: 45%;
+.item-img img{
+    height: 90px;
+    width: 95%;
     margin: 2%; 
 }
 .inc-dec-btn{
@@ -115,15 +114,15 @@
 }
 @media(min-width:900px){
     .cartDetailContrainer{
-        height: 620px;
-        position: absolute;
-        top: 100px;
+        height: 514px;
+        position: fixed;
+        top: 75px;
         right: 1px;
         z-index: 1000;
     }
     .item-section{
         position: relative;
-        top: -220px;
+        top: 0px;
     }
     .delete-btn{
       

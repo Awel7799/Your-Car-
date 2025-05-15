@@ -173,26 +173,6 @@
   align-self: center;
   align-content: center;
 }
-.slick-dots {
-  display: flex !important;
-  justify-content: center;
-  margin-top: 20px;
-  padding: 0;
-  list-style: none;
-  position: relative;
-  top: 590px;
-   width: 5px;
-  height: 5px;
-}
-
-.slick-dots li {
-  display: inline-block;
-  margin: 0 5px;
-  border-radius: 50%;
-   width: 5px;
-  height: 5px;
-}
-
 .slick-dots button {
    width: 5px;
   height: 5px;
@@ -235,17 +215,15 @@
 }
 /* Slick Dots Styling */
 
-
-.slick-dots li {
+.slick-dots li {  background-color: #741906;
   display: inline-block;
-  margin: 0 6px;
-  width: 5px;
-  height: 5px;
+  border-radius: 50%;
+  position: relative;
+  top: 120px;
 }
-
 .slick-dots button {
-  width: 5px;
-  height: 5px;
+  width: 2px;
+  height: 2px;
   border-radius: 50%;
   background-color: #741906;
   border: none;

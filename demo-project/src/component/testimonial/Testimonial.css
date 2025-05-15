@@ -98,8 +98,8 @@
 .slick-dots {
   display: flex !important;
   justify-content: center;
-  margin-top: -200px;
   padding: 0;
+  
 }
 
 .slick-dots li button:before {
@@ -113,20 +113,38 @@
 @media(min-width:800px){
     .p-tstm-big-tittle {
       font-family: Lora;
-font-weight: 700;
-font-size: 128px;
-line-height: 100%;
-letter-spacing: 0%;
-  color: rgba(235, 235, 235, 1);
-  margin: 0;
+      font-weight: 700;
+      font-size: 108px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: rgba(235, 235, 235, 1);
+      margin: 0;
 }
 
 .p-tstm-small-tittle{
     font-family: Lora;
-font-weight: 700;
-font-size: 48px;
-line-height: 100%;
-letter-spacing: 0%;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+}
+@media(min-width:900px){
+    .p-tstm-big-tittle {
+      font-family: Lora;
+      font-weight: 700;
+      font-size: 128px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      color: rgba(235, 235, 235, 1);
+      margin: 0;
+}
 
+.p-tstm-small-tittle{
+    font-family: Lora;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 }

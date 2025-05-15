@@ -2,7 +2,7 @@ import './main.css'
 import arrowimage from '../../assets/akar-icons_arrow-up-right.png';
 function main(){
     return(
-        <div className='cont'>
+        <div id="home" className='cont'>
          <div className='hero-section-detail'>
           <div className='hero-tittle'>
                  <p>
@@ -18,7 +18,7 @@ function main(){
             your dream car!
            </p>
           </div>
-           <button className='discover-button'><span className='discover-word'>Discover</span> <img className='arrow-img' src={arrowimage} alt="arrow" /></button>
+           <button className='discover-button'><span className='discover-word'><a href="#gallary">Discover</a></span> <img className='arrow-img' src={arrowimage} alt="arrow" /></button>
          </div>
         </div>
     );

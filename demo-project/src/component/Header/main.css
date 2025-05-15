@@ -53,6 +53,10 @@
     left: -10%;
     gap: 4px;
 }
+.discover-button a{
+    text-decoration: none;
+    color: white;
+}
 .hero-section-detail {
     display: flex;
     flex-direction: column;

@@ -23,7 +23,7 @@ function App() {
     <Productprovider>
     <CartProvider>
         <Header onCartClick={() => setIsCartOpen((prev) => !prev)}  />
-        <CartDetail isCartOpen={isCartOpen} />
+       <CartDetail isCartOpen={isCartOpen} setIsCartOpen={setIsCartOpen} />
         <Main />
         <About />
         <Service />

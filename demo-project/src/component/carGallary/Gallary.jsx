@@ -12,20 +12,19 @@ import img9 from '../../assets/Car (6).png';
 function Gallary() {
       const carImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
 return(
-    <div className="gallery-container">
-      {carImages.map((image, index) => (
-  <div
-    className={`gallery-item ${index === 4 ? 'center-item' : ''} ${
-      [1, 4, 7].includes(index) ? 'show-on-mobile' : ''
-    }`}
-    key={index}
-  >
-    <img src={image} alt={`Car ${index + 1}`} />
-    {index === 4 && (
+    <div id="gallary" className="gallery-container">
+          {carImages.map((image, index) => (
+       <div
+           className={`gallery-item ${index === 4 ? 'center-item' : ''} ${
+           [1, 4, 7].includes(index) ? 'show-on-mobile' : ''
+                 }`}
+         key={index} >
+             <img src={image} alt={`Car ${index + 1}`} />
+             {index === 4 && (
       <div className="overlay">
         <h2>Tesla Model 3</h2>
         <p>Disruptive, avant-garde, futuristic, innovative.</p>
-        <button>Contact</button>
+        <a href="#contact"><button>Contact</button></a>
       </div>
     )}
   </div>
