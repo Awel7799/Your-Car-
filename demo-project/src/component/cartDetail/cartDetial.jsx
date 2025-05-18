@@ -53,7 +53,7 @@ function CartDetail({ isCartOpen, setIsCartOpen }) {
             {cartItems.length > 0 && (
                 <div>
                     <button className='delete-btn' onClick={() => clearCart()}>
-                        Clear All
+                        Delete All
                     </button>
                 </div>
             )}

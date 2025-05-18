@@ -77,37 +77,43 @@
 
 .tstm-name,
 .tstm-adress {
+  display: block;
   text-align: center;
   font-family: Nunito Sans;
   font-weight: 700;
   font-size: 16px;
   color: rgba(39, 39, 39, 1);
-  margin: 5px 0;
+  margin: 5px;
 }
-
+.tstm-adress{
+  color: rgba(151, 151, 151, 1);
+}
 .tstm-img {
   display: block;
   margin: 20px auto 0;
   width: 100px;
   height: auto;
-   position: relative;
+  position: relative;
   top: 50px;
-  left: 50%;
+  left: 47%;
 }
 
-.slick-dots {
+.testimonial-slider .slick-dots {
   display: flex !important;
   justify-content: center;
   padding: 0;
+  position: relative;
+  top: 200px;
   
 }
 
-.slick-dots li button:before {
+.testimonial-slider .slick-dots li button:before {
   color: white !important;
   opacity: 0.5;
+  font-size: 11px;
 }
 
-.slick-dots li.slick-active button:before {
+.testimonial-slider .slick-dots li.slick-active button:before {
   opacity: 1;
 }
 @media(min-width:800px){
@@ -120,7 +126,21 @@
       color: rgba(235, 235, 235, 1);
       margin: 0;
 }
-
+.tstm-name,
+.tstm-adress {
+  display: inline-block;
+  position: relative;
+  left: 35%;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(39, 39, 39, 1);
+  margin: 5px;
+}
+.tstm-adress{
+  color: rgba(151, 151, 151, 1);
+}
 .p-tstm-small-tittle{
     font-family: Lora;
     font-weight: 700;
@@ -139,7 +159,21 @@
       color: rgba(235, 235, 235, 1);
       margin: 0;
 }
-
+.tstm-name,
+.tstm-adress {
+  display: inline-block;
+  position: relative;
+  left: 35%;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(39, 39, 39, 1);
+  margin: 5px;
+}
+.tstm-adress{
+  color: rgba(151, 151, 151, 1);
+}
 .p-tstm-small-tittle{
     font-family: Lora;
     font-weight: 700;

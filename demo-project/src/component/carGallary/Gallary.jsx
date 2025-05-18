@@ -1,7 +1,7 @@
 
 import './Gallary.css';
 import img1 from '../../assets/Car.png';
-import img2 from '../../assets/Car (4).png';
+import img2 from '../../assets/Car (7).png';
 import img3 from '../../assets/Car (1).png';
 import img4 from '../../assets/Car (2).png';
 import img5 from '../../assets/Rectangle 2.png';

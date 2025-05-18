@@ -108,6 +108,10 @@
         left: 60%;
         top: 106%;
     }
+    .About-page-car-img img{
+        position: relative;
+        right: 47%;
+    }
     .small-tittle{
         position: relative;
         left: -10%;
@@ -116,5 +120,17 @@
     }
     .p-bigg-tittle{
         font-size:92px;
+    }
+}
+@media(min-width:1000px){
+.About-page-car-img img{
+        position: relative;
+        left: -10%;
+    }
+}
+@media(min-width:1300px){
+.About-page-car-img img{
+        position: relative;
+        right: 34%;
     }
 }

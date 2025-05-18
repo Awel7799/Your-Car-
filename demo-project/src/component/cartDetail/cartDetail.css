@@ -6,7 +6,7 @@
     position: fixed;
     right: 0%;
     width: 370px;
-    height: 584px;
+    height: 100vh;
     margin-top:0px;
     z-index: 1000;
 }
@@ -18,14 +18,14 @@
    left: 22px;
 }
 .delete-btn{
-    margin: 90% 0px 0px 90px;
+    margin: 20% 0px 50px 90px;
     width: 189.8148193359375px;
     height: 41px;
     background-color: #741906;
     border-radius: 5px;
     border: none;
 }
-.individual-item{border: 1px solid black;
+.individual-item{
     margin-top: 10px;
     background-color:#FFFFFF ;
     box-shadow: 4px 10px 30px 0px #0000001A;
@@ -114,7 +114,7 @@
 }
 @media(min-width:900px){
     .cartDetailContrainer{
-        height: 514px;
+        height: 90vh;
         position: fixed;
         top: 75px;
         right: 1px;
@@ -123,9 +123,5 @@
     .item-section{
         position: relative;
         top: 0px;
-    }
-    .delete-btn{
-      
-       border: 1px solid black; 
     }
 }
