@@ -15,7 +15,7 @@
 }
 
 .tstm-tittle {
-   min-width: 320px;
+  min-width: 320px;
   text-align: center;
   margin-bottom: 20px;
   position: relative;
@@ -24,6 +24,7 @@
 
 .tstm-big-tittle {
   opacity: 0.05;
+  width: 60%;
 }
 
 .p-tstm-big-tittle {
@@ -31,7 +32,6 @@
   font-weight: 700;
   font-size: 40px;
   color: rgba(235, 235, 235, 1);
-  margin: 0;
 }
 
 .tstm-small-tittle {
@@ -120,7 +120,7 @@
     .p-tstm-big-tittle {
       font-family: Lora;
       font-weight: 700;
-      font-size: 108px;
+      font-size: 80px;
       line-height: 100%;
       letter-spacing: 0%;
       color: rgba(235, 235, 235, 1);

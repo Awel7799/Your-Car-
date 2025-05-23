@@ -46,7 +46,7 @@ const settings = {
       },
     },
     {
-      breakpoint: 700, // for mobile devices
+      breakpoint: 800, // for mobile devices
       settings: {
         slidesToShow: 1,
       },

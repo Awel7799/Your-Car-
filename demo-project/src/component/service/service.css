@@ -11,11 +11,11 @@
     background-repeat: no-repeat;
 }
 .service-tittle{
-    height: 89px;
-    width: 90%;
+    height: 95px;
+    width: 70%;
     position: relative;
     top: 50px;
-    left: 10%;
+    left: 5%;
 }
 .service-cards{
     display: block;
@@ -167,6 +167,23 @@
     letter-spacing: -0.5%;
     text-align: center;    
     color: rgba(18, 39, 61, 1);
+}
+@media(min-width:700px){
+    .service-tittle{
+    position: relative;
+    left: 15%;
+    }
+    .small-s-tittle{
+    position: relative;
+    left: 30%;
+}
+.icon{
+    width: 100px;
+    height: 150px;
+    position: relative;
+    top: 30px;
+    left: 35%;
+}
 }
 @media(min-width:900px){
     .service-page-container{
