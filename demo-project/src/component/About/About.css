@@ -131,7 +131,7 @@
 .About-page-car-img img{
         position: relative;
         left: -20%;
-        top: 0px;
+        top: 10px;
     }
 }
 @media(min-width:1300px){
