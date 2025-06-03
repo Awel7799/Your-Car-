@@ -130,8 +130,8 @@
 @media(min-width:1000px){
 .About-page-car-img img{
         position: relative;
-        left: -40%;
-        top: -15px;
+        left: -20%;
+        top: 0px;
     }
 }
 @media(min-width:1300px){
