@@ -111,7 +111,7 @@
         position: absolute;
         right: 0%;
         left: 60%;
-        top: 106%;
+        top: 120%;
     }
     .About-page-car-img img{
         position: relative;
@@ -130,13 +130,14 @@
 @media(min-width:1000px){
 .About-page-car-img img{
         position: relative;
-        left: -30%;
-        top: 100px;
+        left: -35%;
+        top: 0px;
     }
 }
 @media(min-width:1300px){
 .About-page-car-img img{
         position: relative;
         right: 34%;
+        left: 10px;
     }
 }
