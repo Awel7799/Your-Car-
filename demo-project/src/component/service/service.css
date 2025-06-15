@@ -227,13 +227,14 @@
         left: 200px;  
     }
     .icon{
+      
         position: relative;
-        top: 50px;
-        left: 40%;
+        top: 30px;
+        left: 25%;
     }
     .card{
          width:25%;
-         height: 400px;
+         height: 450px;
          overflow: hidden;
          margin: 0%;
          position: relative;

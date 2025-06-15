@@ -1,3 +1,4 @@
+// src/component/cars/carousel.jsx
 import './carousel.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,99 +15,122 @@ import cartContext from '../cartContext/cartContext';
 function Carousel() {
   const { products } = useProductContext();
   const { addToCart } = useContext(cartContext);
-  const sliderRef = useRef(); // 👈 Reference to control the slider
+  const sliderRef = useRef();
 
   const [counts, setCounts] = useState({});
 
-  const increase = (productId) => {
+  const initialStock = {};
+  products.forEach(product => {
+    initialStock[product.id] = product.quantity;
+  });
+
+  const [stock, setStock] = useState(initialStock);
+
+const increase = (productId) => {
+  const product = products.find(p => p.id === productId);
+  const maxQuantity = product.quantity;
+
+  if ((counts[productId] || 0) < maxQuantity) {
     setCounts(prev => ({
       ...prev,
       [productId]: (prev[productId] || 0) + 1,
     }));
-  };
 
-  const decrease = (productId) => {
-    setCounts(prev => ({
+    addToCart({ ...product, quantity: 1 });
+
+    setStock(prev => ({
       ...prev,
-      [productId]: Math.max((prev[productId] || 0) - 1, 0),
+      [productId]: prev[productId] - 1,
     }));
-  };
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3, // default for large screens
-  slidesToScroll: 1,
-  arrows: false,
-  responsive: [
-    {
-      breakpoint: 1024, // for tablets and small laptops
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-    {
-      breakpoint: 800, // for mobile devices
-      settings: {
-        slidesToShow: 1,
-      },
-    },
-  ],
+  }
 };
 
-return (
- <div id="cars" className="general-car-container">
-  <div className="car-tittle">
-    <div className="big-car-tittle">
-      <p className="p-big-car-tittle">CARS</p>
-    </div>
-    <div className="small-car-tittle">
-      <p className="p-small-car-tittle">Cars</p>
-    </div>
-  </div>
 
-  {/* Arrows + Carousel in one row */}
-  <div className="carousel-wrapper">
-    
-  <button className="custom-arrow-left" onClick={() => sliderRef.current.slickPrev()}>
-      <img src={leftArrow} alt="Prev" />
-    </button>
-    <div className="carousel-section">
-      
-      <Slider ref={sliderRef} {...settings}>
-        {products.map((product) => (
-          <div key={product.id} className="card-list">
-            <div className="cards-car">
-              <img className="car-img" src={product.image} alt={product.name} />
-            </div>
-            <div className="cards-discription">
-              <p className="product-name">{product.name}</p>
-              <p className="product-brand">{product.brand}</p>
-              <p className="p-cards-discription">{product.description}</p>
-            </div>
+  const decrease = (productId) => {
+    if ((counts[productId] || 0) > 0) {
+      setCounts(prev => ({
+        ...prev,
+        [productId]: prev[productId] - 1,
+      }));
 
-            <div className="cards-button">
-              <div className="seat-No">
-                <img src={carImage} alt="seat" />
+      setStock(prev => ({
+        ...prev,
+        [productId]: prev[productId] + 1,
+      }));
+    }
+  };
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
+  return (
+    <div id="cars" className="general-car-container">
+      <div className="car-tittle">
+        <div className="big-car-tittle">
+          <p className="p-big-car-tittle">CARS</p>
+        </div>
+        <div className="small-car-tittle">
+          <p className="p-small-car-tittle">Cars</p>
+        </div>
+      </div>
+
+      <div className="carousel-wrapper">
+        <button className="custom-arrow-left" onClick={() => sliderRef.current.slickPrev()}>
+          <img src={leftArrow} alt="Prev" />
+        </button>
+        <div className="carousel-section">
+          <Slider ref={sliderRef} {...settings}>
+            {products.map((product) => (
+              <div key={product.id} className="card-list">
+                <div className="cards-car">
+                  <img className="car-img" src={product.image} alt={product.name} />
+                </div>
+                <div className="cards-discription">
+                  <p className="product-name">{product.name}</p>
+                  <p className="product-brand">{product.brand}</p>
+                  <p className="p-cards-discription">{product.description}</p>
+                </div>
+
+                <div className="cards-button">
+                  <div className="seat-No">
+                    <img src={carImage} alt="seat" />
+                  </div>
+                  <div className="No-of-item">
+                    <button className="innc-btn" onClick={() => decrease(product.id)}>-</button>
+                    <p className="counter">{stock[product.id]}</p>
+                    <button className="innc-btn" onClick={() => increase(product.id)}>+</button>
+                  </div>
+                </div>
               </div>
-              <div className="No-of-item">
-                <button className="innc-btn" onClick={() => decrease(product.id)}>-</button>
-                <p className="counter">{counts[product.id] || 0}</p>
-                <button className="innc-btn" onClick={() =>{ increase(product.id);addToCart(product)}}>+</button>
-              </div>
-            </div>
-          </div>
-        ))}
-      </Slider>
+            ))}
+          </Slider>
+        </div>
+        <button className="custom-arrow-right" onClick={() => sliderRef.current.slickNext()}>
+          <img src={rightArrow} alt="Next" />
+        </button>
+      </div>
     </div>
-    <button className="custom-arrow-right" onClick={() => sliderRef.current.slickNext()}>
-             <img src={rightArrow} alt="Next" />
-      </button>
-  </div>
-</div>
-
-);
-
+  );
 }
 
 export default Carousel;

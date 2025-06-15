@@ -17,7 +17,7 @@ import { Productprovider } from "./component/cartContext/productContext"
 
 function App() {
   const [isCartOpen,setIsCartOpen]=useState(false);
-
+  
   return (
     <>
     <Productprovider>

@@ -1,14 +1,28 @@
+// src/component/cartContext/CartProvider.jsx
 import React, { useState } from "react";
 import cartContext from "./cartContext";
+
 const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
-
   const [isCartOpen, setIsCartOpen] = useState(false);
 
-  const addToCart = (item) => {
-    setCartItems(prev => [...prev, item]);
-  };
-  
+ const addToCart = (product) => {
+  setCartItems(prevItems => {
+    const existingItem = prevItems.find(item => item.id === product.id);
+
+    if (existingItem) {
+      return prevItems.map(item =>
+        item.id === product.id
+          ? { ...item, quantity: item.quantity + 1 }
+          : item
+      );
+    } else {
+      return [...prevItems, { ...product, quantity: 1 }];
+    }
+  });
+};
+
+
   const updatequantity = (id, newQuantity) => {
     setCartItems(prevCart =>
       prevCart.map(item =>
@@ -28,13 +42,13 @@ const CartProvider = ({ children }) => {
   return (
     <cartContext.Provider
       value={{
-        cartItems, // <- FIXED: Expose this instead of "cart"
+        cartItems,
         addToCart,
         removeFromCart,
         clearCart,
         updatequantity,
         isCartOpen,
-        setIsCartOpen // Optional if you want to control visibility elsewhere
+        setIsCartOpen
       }}
     >
       {children}

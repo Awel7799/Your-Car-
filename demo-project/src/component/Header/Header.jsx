@@ -59,7 +59,7 @@ function Header({ onCartClick }) {
         </ul>
       </div>
 
-      <div className='cart-icon' onClick={onCartClick}>
+      <div className='cart-icon' onClick={onCartClick} data-cart-icon="true">
         <img className='cart-img' src={cart} alt="shopping cart" />
         <p className='item-amount'>{cartItems?.length || 0}</p>
       </div>

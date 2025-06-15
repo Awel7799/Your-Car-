@@ -6,10 +6,13 @@ function CartDetail({ isCartOpen, setIsCartOpen }) {
     const { clearCart, removeFromCart, updatequantity, cartItems } = useContext(cartContext);
     const cartRef = useRef(null);
 
-    // Hide cart on outside click
+    // ✅ Hide cart when clicking outside (but ignore cart icon clicks)
     useEffect(() => {
         function handleClickOutside(event) {
-            if (cartRef.current && !cartRef.current.contains(event.target)) {
+            const clickedInsideCart = cartRef.current && cartRef.current.contains(event.target);
+            const clickedCartIcon = event.target.closest('[data-cart-icon="true"]');
+
+            if (!clickedInsideCart && !clickedCartIcon) {
                 setIsCartOpen(false);
             }
         }
